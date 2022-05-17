@@ -1,4 +1,4 @@
-from Layers import layers
+from ..Layers import layers
 
 def masks(module):
     r"""Returns an iterator over modules masks, yielding the mask.

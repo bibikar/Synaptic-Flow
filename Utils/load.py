@@ -2,15 +2,15 @@ import torch
 import numpy as np
 from torchvision import datasets, transforms
 import torch.optim as optim
-from Models import mlp
-from Models import lottery_vgg
-from Models import lottery_resnet
-from Models import tinyimagenet_vgg
-from Models import tinyimagenet_resnet
-from Models import imagenet_vgg
-from Models import imagenet_resnet
-from Pruners import pruners
-from Utils import custom_datasets
+from ..Models import mlp
+from ..Models import lottery_vgg
+from ..Models import lottery_resnet
+from ..Models import tinyimagenet_vgg
+from ..Models import tinyimagenet_resnet
+from ..Models import imagenet_vgg
+from ..Models import imagenet_resnet
+from ..Pruners import pruners
+from . import custom_datasets
 
 def device(gpu):
     use_cuda = torch.cuda.is_available()

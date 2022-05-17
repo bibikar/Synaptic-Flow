@@ -7,7 +7,7 @@
 
 import torch.nn as nn
 import torch.nn.functional as F
-from Layers import layers
+from ..Layers import layers
 
 class ConvModule(nn.Module):
     """A single convolutional module in a VGG network."""
